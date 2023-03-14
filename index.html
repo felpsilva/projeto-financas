@@ -5,157 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <title>Document</title>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        header {
-            background-color: rgb(24, 20, 21);
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            font-family: 'Anton', sans-serif;
-            color: #fff;
-        }
-
-        header,
-        li {
-            height: 70px
-        }
-
-        header>li {
-            background-color: lightgreen;
-            width: 10%;
-
-        }
-
-        header>div {
-            width: 60%;
-        }
-
-        header div div {
-            border: 1px solid #000;
-            height: 50px;
-            width: 130px;
-            font-size: 35px;
-            margin: 0 auto;
-
-        }
-
-        header ul {
-            list-style: none;
-            padding: 0px;
-            display: flex;
-            flex-direction: row;
-            margin: 0px;
-        }
-
-        header li {
-            width: 100px;
-            padding: 25px 0px;
-            text-align: center;
-        }
-
-        header li:hover {
-            border: 1px solid #464040;
-        }
-
-        section {
-            width: 60%;
-            margin: 0 auto;
-        }
-
-        section article div {
-            height: 400px;
-            margin: 10px;
-            background-color: #f9f9f9;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: scale, 80ms ease-in-out;
-        }
-        section article div:hover {
-            scale: 1.02;
-        }
-
-        aside {
-            display: inline-block;
-            float: right;
-        }
-
-        .ads-vertical {
-            border: 1px dashed #000;
-            width: 200px;
-            height: 700px;
-            margin: 10px;
-            background-color: #cdcdcd;
-        }
-
-        .ads-horizontal {
-            border: 1px dashed #000;
-            width: 700px;
-            height: 125px;
-            margin: 0 auto;
-            background-color: #cdcdcd;
-        }
-        section h1{
-            font-family: 'Anton', sans-serif;
-            margin:10px;
-        }
-        input[type='search']{
-            margin: 10px;
-        }
-    </style>
+    <title>InfoGrana | Home</title>
+    <link rel="stylesheet" href="./public/styles/stylesGlobal.css">
+    <link rel="stylesheet" href="./public/styles/homeStyle.css">
 </head>
 
 <body>
-    <main>
-        <header>
+    <header>
+        <div>
             <div>
-                <div>
-                    Logo
-                </div>
+                Logo
             </div>
+        </div>
 
-            <ul>
-                <li>Home</li>
-                <li>Carteira</li>
-                <li>Day trading</li>
-                <li>Contato</li>
-            </ul>
-
-        </header>
-        
-        <aside>
-            <input type="search">
-            <div class="ads-vertical">
-                ads
-            </div>
-
-        </aside>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./artigos.html">ARTIGOS</a></li>
+            <li><a href="./quemSomos.html"> QUEM SOMOS</a></li>
+            <li><a href="">CONTATO</a></li>
+        </ul>
+    </header>
+    <main>
         <section>
-            <h1>Title</h1>
-            <article>
+            <h1>InfoGrana te informa</h1>
+            <h2>Seção de destaque</h2>
+            <article class="secaoDestaque">
                 <div>
-                    Post
+                    <div class="img"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
+                        dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
+                        laudantium quod?</p>
+                </div>
+                <div>
+                    <div class="img"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
+                        dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
+                        laudantium quod?</p>
                 </div>
             </article>
-            <div class="ads-horizontal">ads</div>
-            <article>
-                <div>
-                    Post
+            <h2>Artigos recentes</h2>
+            <article class="artigosRecentes">
+                <div class="conteiner">
+                    <div class="img2"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
+                        dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
+                        laudantium quod?</p>
                 </div>
+                <div class="conteiner">
+                    <div class="img2"></div>
+                    <h3>Lorem ipsum</h3>
+                    <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
+                        dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
+                        laudantium quod?</p>
+                </div>
+
             </article>
         </section>
-
     </main>
-
 </body>
 
 </html>

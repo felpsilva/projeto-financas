@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./public/styles/stylesGlobal.css">
+    <title>InfoGrana | Artigos</title>
+
+    <style>
+
+
+
+        section article div {
+            height: 400px;
+            margin: 10px;
+            background-color: #f9f9f9;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: scale, 80ms ease-in-out;
+        }
+        section article div:hover {
+            scale: 1.02;
+        }
+
+        aside {
+            display: inline-block;
+            float: right;
+        }
+
+        .ads-vertical {
+            border: 1px dashed #000;
+            width: 200px;
+            height: 700px;
+            margin: 10px;
+            background-color: #cdcdcd;
+        }
+
+        .ads-horizontal {
+            border: 1px dashed #000;
+            width: 700px;
+            height: 125px;
+            margin: 0 auto;
+            background-color: #cdcdcd;
+        }
+        section h1{
+            font-family: 'Anton', sans-serif;
+            margin:10px;
+        }
+        input[type='search']{
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div>
+                <div>
+                    Logo
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./artigos.html">ARTIGOS</a></li>
+                <li><a href="./quemSomos.html"> QUEM SOMOS</a></li>
+                <li><a href="">CONTATO</a></li>
+            </ul>   
+
+        </header>
+        
+        <aside>
+            <input type="search">
+            <div class="ads-vertical">
+                ads
+            </div>
+
+        </aside>
+        <section>
+            <h1>Title</h1>
+            <article>
+                <div>
+                    Post
+                </div>
+            </article>
+            <div class="ads-horizontal">ads</div>
+            <article>
+                <div>
+                    Post
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
