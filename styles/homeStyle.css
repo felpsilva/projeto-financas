@@ -1,5 +1,5 @@
 main {
-    width: 70%;
+    width: 60%;
 }
 
 body {
@@ -49,4 +49,7 @@ section h1{
 .conteiner:hover{
     scale: 1.02;
     background: #cdcdcd;
+}
+h1{
+    text-align: center;
 }

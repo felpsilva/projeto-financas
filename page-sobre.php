@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoGrana | Quem somos</title>
-    <link rel="stylesheet" href="./public/styles/stylesGlobal.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css">
 
 </head>
 <body>
