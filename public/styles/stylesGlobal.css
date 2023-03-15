@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap');
 
 * {
     box-sizing: border-box;
@@ -64,4 +64,11 @@ header ul li a{
     width: 100px;
     height: 70px;
     padding-top: 25px;
+}
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;  
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+
 }
