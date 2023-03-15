@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Oswald:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #181415;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+header,
+li {
+    height: 70px
+}
+
+header>li {
+    width: 10%;
+
+}
+
+header>div {
+    width: 60%;
+}
+
+header div div {
+    height: 50px;
+    width: 130px;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
+header ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+header li {
+    width: 100px;
+    /* padding: 25px 0px; */
+    text-align: center;
+}
+
+header li:hover {
+    border: 1px solid #464040;
+}
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+header ul li a{
+    text-decoration:none;
+    color:#fff;
+    display: block;
+    width: 100px;
+    height: 70px;
+    padding-top: 25px;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 22px;
+}
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;  
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.ads-vertical {
+    border: 1px dashed #000;
+    width: 200px;
+    height: 700px;
+    margin: 10px;
+    background-color: #cdcdcd;
+}
+
+.ads-horizontal {
+    border: 1px dashed #000;
+    width: 70%;
+    height: 125px;
+    margin: 20px 15%;
+    background-color: #cdcdcd;
+
+}
