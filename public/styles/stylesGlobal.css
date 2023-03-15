@@ -65,10 +65,35 @@ header ul li a{
     height: 70px;
     padding-top: 25px;
 }
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 22px;
+}
 h1, h2, h3{
     font-family: 'Oswald', sans-serif;  
 }
 p{
     font-family: 'Open Sans', sans-serif;
+
+}
+.ads-vertical {
+    border: 1px dashed #000;
+    width: 200px;
+    height: 700px;
+    margin: 10px;
+    background-color: #cdcdcd;
+}
+
+.ads-horizontal {
+    border: 1px dashed #000;
+    width: 70%;
+    height: 125px;
+    margin: 20px 15%;
+    background-color: #cdcdcd;
 
 }

@@ -17,21 +17,6 @@
             float: right;
         }
 
-        .ads-vertical {
-            border: 1px dashed #000;
-            width: 200px;
-            height: 700px;
-            margin: 10px;
-            background-color: #cdcdcd;
-        }
-
-        .ads-horizontal {
-            border: 1px dashed #000;
-            width: 700px;
-            height: 125px;
-            margin: 0 auto;
-            background-color: #cdcdcd;
-        }
         section h1{
             margin:10px;
         }
