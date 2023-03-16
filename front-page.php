@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoGrana | Artigo</title>
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/homeStyle.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/homeStyle.css?versao=<?= rand() ?>" />
 </head>
 
 <body>
@@ -19,51 +19,54 @@
         </div>
 
         <ul>
-            <li><a href="./index.html">HOME</a></li>
-            <li><a href="./artigos.html">ARTIGOS</a></li>
+            <li><a href="/wordpress/wp-content/themes/projeto-financas/front-page.php">HOME</a></li>
+            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-posts.php">ARTIGOS</a></li>
             <li><a href="./atualizacoes.html">RESUMO DIÁRIO</a></li>
-            <li><a href="./quemSomos.html"> QUEM SOMOS</a></li>
+            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-scdobre.php"> QUEM SOMOS</a></li>
             <li><a href="">CONTATO</a></li>
         </ul>
     </header>
     <main>
         <h1>InfoGrana te informa</h1>
         <h2>Seção de destaque</h2>
-        <article class="secaoDestaque">
-            <div>
+        <section class="secaoDestaque">
+            <article>
                 <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
                 <div class="img"></div>
+                <div class="informacaoArtigo">
                 <h3>Lorem ipsum</h3>
                 <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
                     dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
-                    laudantium quod?</p>
-            </div>
-            <div>
+                    laudantium quod?</p>    
+                </div>
+ 
+            </article>
+            <article>
                 <div class="img"></div>
                 <h3>Lorem ipsum</h3>
                 <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
                     dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
                     laudantium quod?</p>
-            </div>
-        </article>
+            </article>
+        </section>
         <h2>Artigos recentes</h2>
-        <article class="artigosRecentes">
-            <div class="conteiner">
+        <section class="artigosRecentes">
+            <article class="conteiner">
                 <div class="img2"></div>
                 <h3>Lorem ipsum</h3>
                 <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
                     dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
                     laudantium quod?</p>
-            </div>
-            <div class="conteiner">
+            </article>
+            <article class="conteiner">
                 <div class="img2"></div>
                 <h3>Lorem ipsum</h3>
                 <p>dolor sit amet consectetur adipisicing elit. Asperiores quos delectus quam harum aut numquam
                     dicta, aspernatur eligendi id enim. Sit at maiores nobis magnam delectus harum animi
                     laudantium quod?</p>
-            </div>
+            </article>
 
-        </article>
+        </section>
     </main>
 </body>
 

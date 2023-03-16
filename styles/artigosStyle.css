@@ -1,3 +1,14 @@
+        
+        section{
+            width: 60%;
+        }
+        
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-direction: row-reverse;
+        }
+        
         section article div {
             margin: 10px;
             background-color: #f9f9f9;

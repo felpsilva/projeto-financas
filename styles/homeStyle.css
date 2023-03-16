@@ -8,6 +8,7 @@ body {
     align-items: center;
 }
 
+
 header {
     width: 100%;
 }
@@ -22,14 +23,14 @@ section h1{
     margin-bottom: 50px;
 }
 
-.secaoDestaque div{
+.secaoDestaque article{
     width: 45%;
     height: 450px;
     padding: 10px;
     background: #f9f9f9;
 }
 
-.secaoDestaque div:hover{
+.secaoDestaque article:hover{
     background: #cdcdcd;
 
 }
@@ -44,6 +45,7 @@ section h1{
     padding: 10px;
     margin: 20px 0px;
     background: #f9f9f9;
+    transition: scale, 80ms ease-in-out;
 }
 
 .conteiner:hover{
