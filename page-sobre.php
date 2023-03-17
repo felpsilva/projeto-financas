@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoGrana | Quem somos</title>
     <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/sobreStyle.css">
+
 
 </head>
 <body>

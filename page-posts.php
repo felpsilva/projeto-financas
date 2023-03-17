@@ -8,7 +8,7 @@
     <link rel="stylesheet"
         href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
     <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/artigosStyle.css?versao=<?= rand() ?>"">
+        href="/wordpress/wp-content/themes/projeto-financas/styles/artigosStyle.css?versao=<?= rand() ?>">
     <title>InfoGrana | Artigos</title>
 
 </head>
@@ -41,64 +41,19 @@
         </aside>
         <section>
             <h1>Artigos</h1>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
-            <div class="ads-horizontal">ads</div>
 
-            <article>
+            <?php for ($i = 0; $i < 10; $i ++ ){
+                echo '<a href="/wordpress/wp-content/themes/projeto-financas/single.php"><article>
                 <div>
                     <h2>Titulo do artigo</h2>
                     <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
                         nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
                         facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
                 </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article>
+            </article></a>';
+            };
+            ?>
+
         </section>
 
     </main>
