@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoGrana | Artigo</title>
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/projeto-financas/styles/artigoStyle.css?versao=<?= rand() ?>">
+    <link rel="stylesheet"
+        href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
+    <link rel="stylesheet"
+        href="/wordpress/wp-content/themes/projeto-financas/styles/artigoStyle.css?versao=<?= rand() ?>">
 </head>
 
 <body>
@@ -29,17 +31,15 @@
     <main>
         <section>
             <article>
-                <h1>Titulo do artigo</h1>
-                <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</h2>
+                <h1>
+                    <?php the_title() ?>
+                </h1>
+                <p class="resumo">
+                    <?php the_excerpt() ?>
+                </p>
                 <div class="img"></div>
                 <div class="ads-horizontal"></div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum voluptatibus, iure vero, distinctio explicabo corporis ipsum voluptatem velit dignissimos modi numquam quo dolorem delectus, similique odio dolor non rerum dicta.</p>
-                <p>reférencias</p>
+                <?php the_content() ?>
             </article>
         </section>
     </main>
