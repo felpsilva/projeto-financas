@@ -19,10 +19,10 @@
         </div>
 
         <ul>
-            <li><a href="/wordpress/wp-content/themes/projeto-financas/front-page.php">HOME</a></li>
-            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-posts.php">ARTIGOS</a></li>
+            <li><a href="http://localhost/wordpress/">HOME</a></li>
+            <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
             <li><a href="./atualizacoes.html">RESUMO DIÁRIO</a></li>
-            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-sobre.php"> QUEM SOMOS</a></li>
+            <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
             <li><a href="">CONTATO</a></li>
         </ul>
     </header>

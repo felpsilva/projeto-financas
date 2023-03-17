@@ -1,3 +1,6 @@
+<?php
+    $posts = get_posts();
+?>
 <!DOCTYPE html>
 <html lang="pt_br">
 
@@ -22,10 +25,10 @@
         </div>
 
         <ul>
-            <li><a href=" /wordpress/wp-content/themes/projeto-financas/front-page.php">HOME</a></li>
-            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-posts.php">ARTIGOS</a></li>
+            <li><a href="http://localhost/wordpress/">HOME</a></li>
+            <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
             <li><a href="./atualizacoes.html">RESUMO DIÁRIO</a></li>
-            <li><a href="/wordpress/wp-content/themes/projeto-financas/page-sobre.php"> QUEM SOMOS</a></li>
+            <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
             <li><a href="">CONTATO</a></li>
         </ul>
 
@@ -42,17 +45,21 @@
         <section>
             <h1>Artigos</h1>
 
-            <?php for ($i = 0; $i < 10; $i ++ ){
-                echo '<a href="/wordpress/wp-content/themes/projeto-financas/single.php"><article>
-                <div>
-                    <h2>Titulo do artigo</h2>
-                    <p>RESUMO -- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi laudantium quae
-                        nesciunt illo voluptas praesentium enim, molestias provident voluptates sit commodi omnis
-                        facilis nulla harum debitis asperiores! Corporis, repellat harum.</p>
-                </div>
-            </article></a>';
-            };
-            ?>
+            <?php // for ($i = 0; $i < count($posts); $i ++ ) { ?>
+            <?php foreach ($posts as $post) { ?>
+
+                <a href="http://localhost/wordpress/artigo/">
+                    <article>
+                        <div>   
+                            <h2>
+                                <?php echo $post->post_title ?>
+                            </h2>
+                            <p> <?php echo $post->post_excerpt?></p>
+                        </div>
+                    </article>
+                </a>
+
+            <?php } ?>
 
         </section>
 
