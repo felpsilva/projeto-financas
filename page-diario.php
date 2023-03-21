@@ -1,6 +1,3 @@
-<?php
-    $posts = get_posts();
-?>
 <!DOCTYPE html>
 <html lang="pt_br">
 
@@ -36,31 +33,18 @@
 
     <main>
         <aside>
-            <input type="search">
             <div class="ads-vertical">
                 ads
             </div>
 
         </aside>
         <section>
-            <h1>Artigos</h1>
-
-            <?php // for ($i = 0; $i < count($posts); $i ++ ) { ?>
-            <?php foreach ($posts as $post) { ?>
-
-                <a href="<?php the_permalink()?>">
+            <h1>Resumo Diário</h1>
                     <article>
                         <div>   
-                            <h2>
-                                <?php echo $post->post_title ?>
-                            </h2>
-                            <p> <?php echo $post->post_excerpt?></p>
+                            <h2></h2>
                         </div>
                     </article>
-                </a>
-
-            <?php } ?>
-
         </section>
 
     </main>

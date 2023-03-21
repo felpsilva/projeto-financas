@@ -47,7 +47,7 @@ section a{
 }
 
 
-.conteiner{
+.conteiner, .resumoDiario{
     padding: 10px;
     margin: 20px 0px;
     background: #f9f9f9;
@@ -55,6 +55,10 @@ section a{
 }
 
 .conteiner:hover{
+    scale: 1.02;
+    background: #cdcdcd;
+}
+.resumoDiario:hover{
     scale: 1.02;
     background: #cdcdcd;
 }

@@ -29,7 +29,7 @@ $posts = get_posts();
         <ul>
             <li><a href="http://localhost/wordpress/">HOME</a></li>
             <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
-            <li><a href="./atualizacoes.html">RESUMO DIÁRIO</a></li>
+            <li><a href="http://localhost/wordpress/diario/">RESUMO DIÁRIO</a></li>
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
             <li><a href="">CONTATO</a></li>
         </ul>
@@ -44,7 +44,7 @@ $posts = get_posts();
                     <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
                     <div class='img'></div>
                     <div class='informacaoArtigo'>
-                        <a href='http://localhost/wordpress/artigo/'>
+                        <a href='<?php the_permalink()?>'>
                             <h3>
                                 <?php echo $post->post_title ?>
                             </h3>
@@ -64,7 +64,7 @@ $posts = get_posts();
                 <?php $post = $posts[$i]; ?>
                 <article class='conteiner'>
                     <div class='img2'></div>
-                    <a href='http://localhost/wordpress/artigo/'>
+                    <a href='<?php the_permalink()?>'>
                         <h3>
                             <?php echo $post->post_title ?>
                         </h3>
@@ -76,6 +76,13 @@ $posts = get_posts();
             <?php };
              ?>
 
+        </section>
+        <h2>Resumo diário</h2>
+        <section>
+            <article class="resumoDiario">
+                <h3>titulo de resumo diário</h3>
+                <p>corpo de resumo diário</p>
+            </article>
         </section>
     </main>
 </body>
