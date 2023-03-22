@@ -7,13 +7,17 @@
     padding: 0px;
 }
 
+body{
+    height: 100vh;
+    position: relative;
+}
 
 header {
     width: 100%;
     background-color: #181415;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Anton', sans-serif;
     color: #fff;
 }
@@ -95,4 +99,12 @@ p{
     height: 125px;
     margin: 20px 15%;
     background-color: #cdcdcd;
+}
+footer{
+    background-color: #464040;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }

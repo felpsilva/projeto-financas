@@ -25,7 +25,6 @@
             <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
             <li><a href="http://localhost/wordpress/diario/">RESUMO DIÁRIO</a></li>
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li> 
-            <li><a href="">CONTATO</a></li>
         </ul>
     </header>
     <main>
@@ -43,6 +42,9 @@
             </article>
         </section>
     </main>
+    <footer>
+        <h2>Contatos</h2>
+    </footer>
 
 </body>
 
