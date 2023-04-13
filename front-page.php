@@ -39,21 +39,23 @@ $posts = get_posts();
         <section class="secaoDestaque">
             <?php for ($i = 0; $i < 2; $i++) { ?>
                 <?php $post = $posts[$i]; ?>
-                <article>
-                    <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
-                    <div class='img'></div>
-                    <div class='informacaoArtigo'>
-                        <a href='<?php the_permalink()?>'>
-                            <h3>
-                                <?php echo $post->post_title ?>
-                            </h3>
-                            <p>
-                                <?php echo $post->post_excerpt ?>
-                            </p>
-                        </a>
-                    </div>
+                    <article>
+                        <a href='<?php the_permalink() ?>'>
+                        <div class="containDestaque">
+                            <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
+                            <div class='img'></div>
+                            <div class='informacaoArtigo'>
+                                <h3>
+                                    <?php echo $post->post_title ?>
+                                </h3>
+                                <p>
+                                    <?php echo $post->post_excerpt ?>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    </article>
 
-                </article>
             <?php } ?>
 
         </section>
@@ -61,19 +63,20 @@ $posts = get_posts();
         <section class="artigosRecentes">
             <?php for ($i = 0; $i < 2; $i++) { ?>
                 <?php $post = $posts[$i]; ?>
-                <article class='conteiner'>
-                    <div class='img2'></div>
-                    <a href='<?php the_permalink()?>'>
+                <a href='<?php the_permalink() ?>'>
+                    <article class='conteiner'>
+                        <div class='img2'></div>
                         <h3>
                             <?php echo $post->post_title ?>
                         </h3>
                         <p>
                             <?php echo $post->post_excerpt ?>
                         </p>
-                    </a>
-                </article></a>
-            <?php };
-             ?>
+                    </article>
+                </a>
+            <?php }
+            ;
+            ?>
 
         </section>
         <h2>Resumo diário</h2>
