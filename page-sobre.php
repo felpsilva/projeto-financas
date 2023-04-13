@@ -30,6 +30,12 @@
         </ul>
     </header>
     <main>
+        <aside>
+            <div class="ads-vertical">
+                ads
+            </div>
+
+        </aside>
         <section>
             <h1>QUEM SOMOS</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur maxime aut porro quos,
