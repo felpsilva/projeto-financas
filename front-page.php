@@ -19,9 +19,11 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
         href="/wordpress/wp-content/themes/projeto-financas/styles/homeStyle.css?versao=<?= rand() ?>" />
     <style>
         div>figure {
-            width: 1360px;
-            height: 550px;
-            border: 1px solid black;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -52,15 +54,16 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
                         <div class="containDestaque">
                             <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
                             <div class='img'>
-                                <?php the_post_thumbnail('teste') ?>
-                            </div>
-                            <div class='informacaoArtigo'>
-                                <h3>
-                                    <?php echo $post->post_title ?>
-                                </h3>
-                                <p>
-                                    <?php echo $post->post_excerpt ?>
-                                </p>
+                                <figure style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+                                    <div class='informacaoArtigo'>
+                                        <h3>
+                                            <?php echo $post->post_title ?>
+                                        </h3>
+                                        <p>
+                                            <?php echo $post->post_excerpt ?>
+                                        </p>
+                                    </div>
+                                </figure>
                             </div>
                         </div>
                     </a>
