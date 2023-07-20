@@ -36,7 +36,7 @@
                 <p class="resumo">
                     <?php the_excerpt() ?>
                 </p>
-                <div class="img"></div>
+                <div class="img"><figure style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
                 <div class="ads-horizontal"></div>
                 <?php the_content() ?>
             </article>
