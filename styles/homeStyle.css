@@ -21,21 +21,22 @@ section h1{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    width: 100%;
 }
 
-.secaoDestaque article{
-    width: 45%;
+.containDestaque{
+    width: 375px;
     height: 450px;
     padding: 10px;
     background: #f9f9f9;
 }
 
-.secaoDestaque article:hover{
+.containDestaque:hover{
     background: #cdcdcd;
 
 }
 
-.secaoDestaque .img{
+.containDestaque .img{
     border: 1px dashed #000;
     width: 100%;
     height:70%;
@@ -47,7 +48,7 @@ section a{
 }
 
 
-.conteiner{
+.conteiner, .resumoDiario{
     padding: 10px;
     margin: 20px 0px;
     background: #f9f9f9;
@@ -55,6 +56,10 @@ section a{
 }
 
 .conteiner:hover{
+    scale: 1.02;
+    background: #cdcdcd;
+}
+.resumoDiario:hover{
     scale: 1.02;
     background: #cdcdcd;
 }
