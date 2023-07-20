@@ -1,5 +1,6 @@
 <?php
 $posts = get_posts();
+$imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
 ?>
 
 
@@ -16,6 +17,13 @@ $posts = get_posts();
         href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
     <link rel="stylesheet"
         href="/wordpress/wp-content/themes/projeto-financas/styles/homeStyle.css?versao=<?= rand() ?>" />
+    <style>
+        div>figure {
+            width: 1360px;
+            height: 550px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,11 +47,13 @@ $posts = get_posts();
         <section class="secaoDestaque">
             <?php for ($i = 0; $i < 2; $i++) { ?>
                 <?php $post = $posts[$i]; ?>
-                    <article>
-                        <a href='<?php the_permalink() ?>'>
+                <article>
+                    <a href='<?php the_permalink() ?>'>
                         <div class="containDestaque">
                             <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
-                            <div class='img'></div>
+                            <div class='img'>
+                                <?php the_post_thumbnail('teste') ?>
+                            </div>
                             <div class='informacaoArtigo'>
                                 <h3>
                                     <?php echo $post->post_title ?>
@@ -54,7 +64,7 @@ $posts = get_posts();
                             </div>
                         </div>
                     </a>
-                    </article>
+                </article>
 
             <?php } ?>
 
