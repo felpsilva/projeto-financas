@@ -29,10 +29,13 @@ section h1{
     height: 450px;
     padding: 10px;
     background: #f9f9f9;
+    transition: scale, 80ms ease-in-out;
 }
 
 .containDestaque:hover{
+    scale: 1.02;
     background: #cdcdcd;
+    
 
 }
 
