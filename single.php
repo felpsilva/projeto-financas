@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoGrana | Artigo</title>
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/artigoStyle.css?versao=<?= rand() ?>">
-</head>
+<?php get_header(); ?>
 
 <body>
     <header>
@@ -27,7 +15,7 @@
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li> 
         </ul>
     </header>
-    <main>
+    <main class="content">
         <section>
             <article>
                 <h1>
@@ -36,7 +24,7 @@
                 <p class="resumo">
                     <?php the_excerpt() ?>
                 </p>
-                <div class="img"><figure style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
+                <div class="imgPost"><figure style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
                 <div class="ads-horizontal"></div>
                 <?php the_content() ?>
             </article>

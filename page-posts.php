@@ -1,20 +1,8 @@
 <?php
     $posts = get_posts();
 ?>
-<!DOCTYPE html>
-<html lang="pt_br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/artigosStyle.css?versao=<?= rand() ?>">
-    <title>InfoGrana | Artigos</title>
-
-</head>
+<?php get_header(); ?>
 
 <body>
     <header>
@@ -33,7 +21,7 @@
 
     </header>
 
-    <main>
+    <main class="content100 sobreFlex">
         <aside>
             <input type="search">
             <div class="ads-vertical">
@@ -41,7 +29,7 @@
             </div>
 
         </aside>
-        <section>
+        <section class="content">
             <h1>Artigos</h1>
 
             <?php // for ($i = 0; $i < count($posts); $i ++ ) { ?>
@@ -49,7 +37,7 @@
 
                 <a href="<?php the_permalink()?>">
                     <article>
-                        <div>   
+                        <div class="postList">   
                             <h2>
                                 <?php echo $post->post_title ?>
                             </h2>
