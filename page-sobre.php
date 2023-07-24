@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt_br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoGrana | Quem somos</title>
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/sobreStyle.css?versao=<?= rand() ?>">
-
-
-</head>
+<?php get_header(); ?>
 
 <body>
     <header>
@@ -29,14 +15,14 @@
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
         </ul>
     </header>
-    <main>
+    <main class="sobreFlex">
         <aside>
             <div class="ads-vertical">
                 ads
             </div>
 
         </aside>
-        <section>
+        <section class="content">
             <h1>QUEM SOMOS</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur maxime aut porro quos,
                 dolorum similique. Necessitatibus sequi voluptatibus esse iste dolore! Recusandae voluptate repudiandae

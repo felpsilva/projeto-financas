@@ -2,32 +2,7 @@
 $posts = get_posts();
 $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
 ?>
-
-
-
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoGrana</title>
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/stylesGlobal.css?versao=<?= rand() ?>">
-    <link rel="stylesheet"
-        href="/wordpress/wp-content/themes/projeto-financas/styles/homeStyle.css?versao=<?= rand() ?>" />
-    <style>
-        div>figure {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            overflow: hidden;
-        }
-    </style>
-</head>
-
+<?php get_header(); ?>
 <body>
     <header>
         <div>
@@ -43,8 +18,8 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
         </ul>
     </header>
-    <main>
-        <h1>InfoGrana te informa</h1>
+    <main class="content">
+        <h1 class="center">InfoGrana te informa</h1>
         <h2>Seção de destaque</h2>
         <section class="secaoDestaque">
             <?php for ($i = 0; $i < 2; $i++) { ?>
@@ -54,7 +29,7 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
                         <div class="containDestaque">
                             <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
                             <div class='img'>
-                                <figure style="background-image: url('<?php the_post_thumbnail_url() ?>')">
+                                <figure class="destaqueHome"style="background-image: url('<?php the_post_thumbnail_url() ?>')">
                                     <div class='informacaoArtigo'>
                                         <h3>
                                             <?php echo $post->post_title ?>
