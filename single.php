@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<?php
+$img_id = get_post_thumbnail_id();
+$img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true)
+?>
 
 <body>
     <header>
@@ -24,7 +28,7 @@
                 <p class="resumo">
                     <?php the_excerpt() ?>
                 </p>
-                <div class="imgPost"><figure style="background-image: url('<?php the_post_thumbnail_url() ?>')"></div>
+                <div class="imgPost"><img src="<?php the_post_thumbnail_url()?>" alt="<?= $img_title?>"></div>
                 <div class="ads-horizontal"></div>
                 <?php the_content() ?>
             </article>
