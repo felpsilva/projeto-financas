@@ -22,30 +22,23 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
         <h1 class="center">InfoGrana te informa</h1>
         <h2>Seção de destaque</h2>
         <section class="secaoDestaque">
-            <?php for ($i = 0; $i < 2; $i++) { ?>
-                <?php $post = $posts[$i]; ?>
+                <?php $post = $posts[0]; ?>
                 <article>
                     <a href='<?php the_permalink() ?>'>
                         <div class="containDestaque">
-                            <!-- lembra de mudar a unidade de medida para a div quando utilizar a tag img de fato  -->
                             <div class='img'>
                                 <figure class="destaqueHome"style="background-image: url('<?php the_post_thumbnail_url() ?>')">
                                     <div class='informacaoArtigo'>
                                         <h3>
-                                            <?php echo $post->post_title ?>
+                                            <?= $post->post_title ?>
                                         </h3>
-                                        <p>
-                                            <?php echo $post->post_excerpt ?>
-                                        </p>
                                     </div>
+                                    <div class="destaqueSombra"></div>
                                 </figure>
                             </div>
                         </div>
                     </a>
                 </article>
-
-            <?php } ?>
-
         </section>
         <h2>Artigos recentes</h2>
         <section class="artigosRecentes">
