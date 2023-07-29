@@ -3,7 +3,7 @@ $posts = get_posts();
 $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
 $args = array(
     'post_type'     => 'post',
-    'post_per_page' => 2,
+    'posts_per_page' => 2,
     'offset'        => 1
 );
 $artigos_recentes = new WP_Query($args);
