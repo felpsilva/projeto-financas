@@ -140,7 +140,6 @@ footer{
 .containDestaque{
     width: 100%;
     height: 450px;
-    padding: 10px;
     background: #f9f9f9;
     transition: scale, 80ms ease-in-out;
 }
@@ -185,8 +184,9 @@ section a{
         background-repeat: no-repeat;
         overflow: hidden;
         position: relative;
-        animation:zoomAnimate 5s infinite alternate;
+        animation:zoomAnimate 3s infinite alternate;
         background-position: center;
+        border-radius: 8px;
 }
 .imgPost{
     width: 100%;
