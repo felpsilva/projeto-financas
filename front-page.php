@@ -1,6 +1,13 @@
 <?php
 $posts = get_posts();
 $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
+$args = array(
+    'post_type'     => 'post',
+    'post_per_page' => 2,
+    'offset'        => 1
+);
+$artigos_recentes = new WP_Query($args);
+global $artigos_recentes
 ?>
 <?php get_header(); ?>
 <body>
@@ -42,22 +49,18 @@ $imgSrc = wp_get_attachment_image_src(get_post_thumbnail_id(12), 'teste');
         </section>
         <h2>Artigos recentes</h2>
         <section class="artigosRecentes">
-            <?php for ($i = 0; $i < 2; $i++) { ?>
-                <?php $post = $posts[$i]; ?>
-                <a href='<?php the_permalink() ?>'>
-                    <article class='conteiner'>
-                        <div class='img2'></div>
-                        <h3>
-                            <?php echo $post->post_title ?>
-                        </h3>
-                        <p>
-                            <?php echo $post->post_excerpt ?>
-                        </p>
-                    </article>
-                </a>
-            <?php }
-            ;
-            ?>
+
+        <?php if ($artigos_recentes->have_posts()) :
+        while ($artigos_recentes->have_posts()) : $artigos_recentes->the_post(); ?>
+        <a href='<?php the_permalink() ?>'>
+        <article class='conteiner'>
+        <div class='img2'></div>
+            <?php the_title('<h3>', '</h3>'); ?>
+            <?php the_excerpt(); ?>
+        </article>
+        </a>
+        <?php endwhile;
+        endif;?>
 
         </section>
         <h2>Resumo diário</h2>

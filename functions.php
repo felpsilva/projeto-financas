@@ -2,7 +2,7 @@
 add_theme_support('post-thumbnails');//add cadastro de imagens destacadas 
 
 function theme_scripts() {
-  wp_enqueue_style('stylesGlobal', get_template_directory_uri() .'/styles/stylesGlobal.css', [], '1.0.6');
+  wp_enqueue_style('stylesGlobal', get_template_directory_uri() .'/styles/stylesGlobal.css', [], '1.0.8');
 }
 add_action('wp_enqueue_scripts', 'theme_scripts');
 
