@@ -249,4 +249,11 @@ input[type='search']{
     100%{background-size: 105%;}
 }
 
+article .autor{
+    font-weight: 800;
+}
+
+article .data{
+    font-style: italic;
+}
 
