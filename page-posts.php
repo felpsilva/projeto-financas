@@ -42,6 +42,8 @@
                                 <?php echo $post->post_title ?>
                             </h2>
                             <p> <?php echo $post->post_excerpt?></p>
+                            <p class="data"><?php the_time('d/m/Y'); ?></p>    
+
                         </div>
                     </article>
                 </a>

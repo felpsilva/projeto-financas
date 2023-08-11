@@ -57,6 +57,7 @@ global $artigos_recentes
         <div class='img2'></div>
             <?php the_title('<h3>', '</h3>'); ?>
             <?php the_excerpt(); ?>
+            <p class="data"><?php the_time('d/m/Y'); ?></p>    
         </article>
         </a>
         <?php endwhile;
