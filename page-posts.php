@@ -5,30 +5,10 @@
 <?php get_header(); ?>
 
 <body>
-    <header>
-        <div>
-            <div>
-                Logo
-            </div>
-        </div>
-
-        <ul>
-            <li><a href="http://localhost/wordpress/">HOME</a></li>
-            <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
-            <li><a href="http://localhost/wordpress/diario/">RESUMO DIÁRIO</a></li>
-            <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
-        </ul>
-
-    </header>
+<?php  include  "views/menu-superior.php"?>
 
     <main class="content100 sobreFlex">
-        <aside>
-            <input type="search">
-            <div class="ads-vertical">
-                ads
-            </div>
-
-        </aside>
+    <?php include "views/ads/ads-vertical.php"?>
         <section class="content">
             <h1>Artigos</h1>
 
