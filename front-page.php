@@ -11,20 +11,7 @@ global $artigos_recentes
 ?>
 <?php get_header(); ?>
 <body>
-    <header>
-        <div>
-            <div>
-                Logo
-            </div>
-        </div>
-
-        <ul>
-            <li><a href="http://localhost/wordpress/">HOME</a></li>
-            <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
-            <li><a href="http://localhost/wordpress/diario/">RESUMO DIÁRIO</a></li>
-            <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li>
-        </ul>
-    </header>
+<?php  include  "views/menu-superior.php"?>
     <main class="content">
         <h1 class="center">InfoGrana te informa</h1>
         <h2>Seção de destaque</h2>

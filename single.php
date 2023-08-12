@@ -6,20 +6,7 @@ $img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true)
 
 <body>
 <?php while (have_posts()) : the_post(); ?>
-    <header>
-        <div>
-            <div>
-                Logo
-            </div>
-        </div>
-
-        <ul>
-            <li><a href="http://localhost/wordpress/">HOME</a></li>
-            <li><a href="http://localhost/wordpress/posts">ARTIGOS</a></li>
-            <li><a href="http://localhost/wordpress/diario/">RESUMO DIÁRIO</a></li>
-            <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li> 
-        </ul>
-    </header>
+    <?php  include  "views/menu-superior.php"?>
     <main class="contentArtigo">
         <section  class="contentGeral">
             <article>
@@ -35,7 +22,7 @@ $img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true)
                 <div class="ads-horizontal"></div>
                 <?php the_content() ?>
             </article>
-            <aside><div class ="ads-vertical">ads</div></aside>
+            <?php include "views/ads/ads-vertical.php"?>
         </section>
     </main>
     <?php endwhile; ?>
