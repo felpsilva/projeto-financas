@@ -20,8 +20,8 @@ $img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true)
             <li><a href="http://localhost/wordpress/sobre"> QUEM SOMOS</a></li> 
         </ul>
     </header>
-    <main class="content">
-        <section>
+    <main class="contentArtigo">
+        <section  class="contentGeral">
             <article>
                 <h1>
                     <?php the_title() ?>
@@ -35,6 +35,7 @@ $img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true)
                 <div class="ads-horizontal"></div>
                 <?php the_content() ?>
             </article>
+            <aside><div class ="ads-vertical">ads</div></aside>
         </section>
     </main>
     <?php endwhile; ?>

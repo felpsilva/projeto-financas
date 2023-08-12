@@ -11,6 +11,23 @@
     width: 60%;
 }
 
+.contentArtigo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contentArtigo .contentGeral{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contentGeral article{
+    min-width: 700px;
+    max-width: 750px;
+}
+
 section h1{
     text-align: center;
 }
@@ -208,6 +225,7 @@ p{
     display: flex;
     flex-direction: column;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
 }
 aside{
     display: inline-block;
@@ -255,5 +273,34 @@ article .autor{
 
 article .data{
     font-style: italic;
+}
+
+@media (max-width:1090px){
+    aside{    
+        display: none;
+    }
+    .contentArtigo .contentGeral{
+        width: auto;
+    }
+}
+
+@media (max-width:900px){
+    
+    .contentGeral article {
+        min-width: 500px;
+        max-width: 600px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .imgPost{
+        height: 375px;
+    }
 }
 
