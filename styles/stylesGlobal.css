@@ -66,13 +66,14 @@ header>li {
 
 header>div {
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header div div {
     height: 50px;
-    width: 130px;
     font-size: 35px;
-    margin: 0 auto;
 }
 
 header ul {
