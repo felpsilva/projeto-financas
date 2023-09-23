@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Oswald:wght@200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content{
+    width: 60%;
+}
+
+.contentArtigo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.contentArtigo .contentGeral{
+    display:flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.contentGeral article{
+    min-width: 700px;
+    max-width: 750px;
+}
+
+section h1{
+    text-align: center;
+}
+
+figure h3{
+    color:#ffffff
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #181415;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Anton', sans-serif, fantasy; 
+    color: #fff;
+}
+
+header,
+li {
+    height: 70px
+}
+
+header>li {
+    width: 10%;
+
+}
+
+header>div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div div {
+    height: 50px;
+    font-size: 35px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+header li {
+    width: 100px;
+    /* padding: 25px 0px; */
+    text-align: center;
+}
+
+header li:hover {
+    border: 1px solid #464040;
+}
+
+header ul li a{
+    text-decoration:none;
+    color:#fff;
+    display: block;
+    width: 100px;
+    height: 70px;
+    padding-top: 25px;
+}
+h1{
+    font-size: 50px;
+    margin:30px 0px
+}
+
+.center{
+    text-align: center;
+}
+
+h2{
+    font-size: 27px;
+}
+h3{
+    font-size: 22px;
+}
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+
+}
+.ads-vertical {
+    border: 1px dashed #000;
+    width: 200px;
+    height: 700px;
+    margin: 10px;
+    background-color: #cdcdcd;
+}
+
+.ads-horizontal {
+    border: 1px dashed #000;
+    width: 70%;
+    height: 125px;
+    margin: 20px 15%;
+    background-color: #cdcdcd;
+}
+footer{
+    background-color: #464040;
+    color:#fff;
+    width: 100%;
+    text-align: center;
+}
+.secaoDestaque{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.secaoDestaque article{
+    width: 100%;
+}
+
+.containDestaque{
+    width: 100%;
+    height: 450px;
+    background: #f9f9f9;
+    transition: scale, 80ms ease-in-out;
+}
+
+
+.containDestaque .img{
+    width: 100%;
+    height: 100%;
+}
+.informacaoArtigo{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    z-index: 100;
+    padding-left: 15px;
+}
+section a{
+    text-decoration: none;
+    color:#000;
+    
+}
+.conteiner, .resumoDiario{
+    padding: 10px;
+    margin: 20px 0px;
+    background: #f9f9f9;
+    transition: scale, 80ms ease-in-out;
+}
+
+.conteiner:hover{
+    scale: 1.02;
+    background: #cdcdcd;
+}
+.resumoDiario:hover{
+    scale: 1.02;
+    background: #cdcdcd;
+}
+
+.destaqueHome{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: relative;
+        animation:zoomAnimate 3s infinite alternate;
+        background-position: center;
+        border-radius: 8px;
+}
+.imgPost{
+    width: 100%;
+    height: 475px;
+    margin:0 auto;
+}
+.imgPost img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+article h1, article h2{
+    margin:30px 0px;
+}
+p{
+    margin: 20px 0px;
+}
+.sobreFlex {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+aside{
+    display: inline-block;
+    float: right;   
+}
+.content100{
+    width: 100%;
+}
+
+section article .postList {
+    margin: 10px;
+    background-color: #f9f9f9;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: scale, 80ms ease-in-out;
+    padding: 10px;
+}
+section article .postList:hover {
+    scale: 1.02;
+    background: #cdcdcd;
+
+}
+input[type='search']{
+    margin: 10px;
+}
+
+.destaqueSombra{
+    content: "";
+    background: linear-gradient(0deg,#000 0%,rgba(1,0,0,0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+}
+
+@keyframes zoomAnimate {
+    0%{background-size: 100%;}
+    100%{background-size: 105%;}
+}
+
+article .autor{
+    font-weight: 800;
+}
+
+article .data{
+    font-style: italic;
+}
+
+@media (max-width:1090px){
+    aside{    
+        display: none;
+    }
+    .contentArtigo .contentGeral{
+        width: auto;
+    }
+}
+
+@media (max-width:900px){
+    
+    .contentGeral article {
+        min-width: 500px;
+        max-width: 600px;
+    }
+
+    h1{
+        font-size: 35px;
+    }
+
+    p{
+        font-size: 13px;
+    }
+
+    .imgPost{
+        height: 375px;
+    }
+}
+
