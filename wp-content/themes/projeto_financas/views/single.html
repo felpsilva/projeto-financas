@@ -1,0 +1,28 @@
+    <main class="contentArtigo">
+        <section  class="contentGeral">
+            <article>
+                <h1>
+                    {{ titulo }}
+                </h1>
+                <p class="resumo">
+                {{ resumo }}
+                    <!-- < ?php the_excerpt() ?> -->
+                </p>
+                <p class="autor">Por: {{ autor }}
+                    <!-- ?php the_author(); ?> -->
+                </p>
+                <p class="data">Data de publicação: {{ data }}
+                     <!-- < ?php the_time('d/m/Y - H:i'); ?> -->
+                    </p>    
+                <div class="imgPost"><img src="{{ img.url }}" alt="{{ img.title  }}"></div>
+                <div class="ads-horizontal"></div>
+                <!-- < ?php the_content() ?> -->
+                {{ conteudo }}
+            </article>
+            <!-- < ?php include "views/ads/ads-vertical.html"?> -->
+        </section>
+    </main>
+    <!-- < ?php endwhile; ?> -->
+    <footer>
+        <h2>Contatos</h2>
+    </footer>
