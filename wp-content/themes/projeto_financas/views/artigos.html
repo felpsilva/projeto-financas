@@ -1,0 +1,20 @@
+<main class="content100 sobreFlex">
+      <section class="content">
+          <h1>Artigos</h1>
+          {% for artigo in artigos %}
+              <a href="{{ artigo.link }}">
+                  <article>
+                      <div class="postList">   
+                          <h2>
+                              {{ artigo.titulo }}
+                          </h2>
+                          <p> {{ artigo.resumo }}</p>
+                          <p class="data">{{ artigo.data('d/m/Y') }}</p>    
+
+                      </div>
+                  </article>
+              </a>
+          {% endfor %}
+      </section>
+
+  </main>

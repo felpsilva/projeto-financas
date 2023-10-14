@@ -262,14 +262,13 @@ input[type='search']{
     left: 0;
     z-index: 99;
 }
+.data{
+    font-size: 13px;
+}
 
 @keyframes zoomAnimate {
     0%{background-size: 100%;}
     100%{background-size: 105%;}
-}
-
-article .autor{
-    font-weight: 800;
 }
 
 article .data{

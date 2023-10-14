@@ -1,9 +1,8 @@
-<!-- < ?php get_header(); ?> -->
 <?php
-// $img_id = get_post_thumbnail_id();
-// $img_title = get_post_meta($img_id, '_wp_attachment_image_alt', true);
+get_header(); 
+require 'views/menu_superior.html';
 require get_template_directory() . '/vendor/autoload.php';
-require 'models/artigos.php';
+require 'models/artigo.php';
 
 use projeto_financas\Controller\Artigo;
 

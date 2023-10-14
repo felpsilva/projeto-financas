@@ -5,38 +5,20 @@
 <?php get_header(); ?>
 
 <body>
-<?php  include  "views/menu-superior.html"?>
+<?php  
+require "views/menu_superior.html";
+require get_template_directory() . '/vendor/autoload.php';
+require "models/artigos_model.php";
 
-    <main class="content100 sobreFlex">
-    <?php include "views/ads/ads-vertical.html"?>
-        <section class="content">
-            <h1>Artigos</h1>
+use projeto_financas\Controller\Artigos;
+$artigos_controller = new Artigos;
+echo $artigos_controller->listarArtigos();
 
-            <?php // for ($i = 0; $i < count($posts); $i ++ ) { ?>
-            <?php foreach ($posts as $post) { ?>
+?>
+<footer>
+    <h2>Contatos</h2>
+</footer>
 
-                <a href="<?php the_permalink()?>">
-                    <article>
-                        <div class="postList">   
-                            <h2>
-                                <?php echo $post->post_title ?>
-                            </h2>
-                            <p> <?php echo $post->post_excerpt?></p>
-                            <p class="data"><?php the_time('d/m/Y'); ?></p>    
-
-                        </div>
-                    </article>
-                </a>
-
-            <?php } ?>
-
-        </section>
-
-    </main>
-    <footer>
-        <h2>Contatos</h2>
-    </footer>
-
-    </body>
+</body>
 
 </html>
