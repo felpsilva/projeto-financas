@@ -1,23 +1,23 @@
-<?php get_header(); ?>
+<?php get_header();
+$diarios = get_posts([
+    'post_type'     => 'diario',
+    'post_per_page' => -1,
+    'offset'        => 0
+]);
+
+require "views/menu_superior.html";
+require get_template_directory() . '/vendor/autoload.php';
+require "models/diarios.php";
+
+use projeto_financas\Controller\Diarios;
+$diarios_controller = new Diarios;
+echo $diarios_controller->listarDiarios(-1);
+get_footer();
+?>
 
 <body>
-    <?php include "views/menu_superior.html" ?>
 
-    <main>
-        <?php include "views/ads/ads-vertical.html" ?>
-        <section>
-            <h1>Resumo Diário</h1>
-            <article>
-                <div>
-                    <h2></h2>
-                </div>
-            </article>
-        </section>
 
-    </main>
-    <footer>
-        <h2>Contatos</h2>
-    </footer>
 
 </body>
 

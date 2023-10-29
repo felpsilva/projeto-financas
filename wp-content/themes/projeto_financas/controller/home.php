@@ -2,8 +2,9 @@
 
 namespace projeto_financas\Controller;
 use projeto_financas\models\HomeModel;
+use projeto_financas\controller\Diarios;
 
-class Home
+class Home extends Diarios
 {
   public $destaque;
   public $twig;

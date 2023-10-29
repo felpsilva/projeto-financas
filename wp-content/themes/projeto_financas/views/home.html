@@ -18,32 +18,23 @@
                   </div>
               </a>
           </article>
-  </section>
-  <h2>Artigos recentes</h2>
-  <section class="artigosRecentes">
+          <div class="artigosRecentes">
 
-    {% if artigos_mais_recentes %}
-    {% for artigo_mais_recente in artigos_mais_recentes %}
-  <a href='{{ artigo_mais_recente.post_url }}'>
-  <article class='conteiner'>
-  <div class='img2'></div>
-      <h3>{{ artigo_mais_recente.titulo_post }}</h3>
-      <p>{{ artigo_mais_recente.resumo }}</p>
-      <p class="data">{{ artigo_mais_recente.data('d/m/Y') }}</p>    
-  </article>
-  </a>
-  {% endfor %}
-  {% endif %}
+            {% if artigos_mais_recentes %}
+            {% for artigo_mais_recente in artigos_mais_recentes %}
+          <a href='{{ artigo_mais_recente.post_url }}'>
+          <article class='container'>
+          <div class='img2'></div>
+              <h3>{{ artigo_mais_recente.titulo_post }}</h3>
+              <p>{{ artigo_mais_recente.resumo }}</p>
+              <p class="data">{{ artigo_mais_recente.data('d/m/Y') }}</p>    
+          </article>
+          </a>
+          {% endfor %}
+          {% endif %}
+        
+          </div >
+        
+  </section>
 
-  </section>
-  <h2>Resumo diário</h2>
-  <section>
-      <article class="resumoDiario">
-          <h3>titulo de resumo diário</h3>
-          <p>corpo de resumo diário</p>
-      </article>
-  </section>
 </main>
-<footer>
-  <h2>Contatos</h2>
-</footer>

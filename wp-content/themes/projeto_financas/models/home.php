@@ -1,7 +1,6 @@
 <?php
 
 namespace projeto_financas\models;
-
 class HomeModel
 {
   public $posts;
@@ -33,7 +32,7 @@ class HomeModel
   public function exibeRecentes(){
     $artigosRecentes = array(
       'post_type'     => 'post',
-      'posts_per_page' => 2,
+      'posts_per_page' => 3,
       'offset'        => 1
   );
   $artigosMaisRecentes = [];

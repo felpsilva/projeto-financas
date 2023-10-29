@@ -8,7 +8,7 @@
 }
 
 .content{
-    width: 60%;
+    max-width: 1250px;
 }
 
 .contentArtigo{
@@ -42,6 +42,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 header {
@@ -152,14 +153,17 @@ footer{
     width: 100%;
 }
 .secaoDestaque article{
-    width: 100%;
 }
 
 .containDestaque{
-    width: 100%;
-    height: 450px;
+    width: 65vh;
+    height: 400px;
     background: #f9f9f9;
     transition: scale, 80ms ease-in-out;
+}
+.artigosRecentes{
+    width: 300px;
+    margin: 0 1em;
 }
 
 
@@ -179,14 +183,14 @@ section a{
     color:#000;
     
 }
-.conteiner, .resumoDiario{
+.container, .resumoDiario{
     padding: 10px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     background: #f9f9f9;
     transition: scale, 80ms ease-in-out;
 }
 
-.conteiner:hover{
+.container:hover{
     scale: 1.02;
     background: #cdcdcd;
 }
@@ -198,13 +202,13 @@ section a{
 .destaqueHome{
         width: 100%;
         height: 100%;
+        background-size: 110%;
         background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
         position: relative;
-        animation:zoomAnimate 3s infinite alternate;
+        animation: Animate 50s infinite;
         background-position: center;
-        border-radius: 8px;
 }
 .imgPost{
     width: 100%;
@@ -233,15 +237,26 @@ aside{
     float: right;   
 }
 .content100{
+    width: 1250px;
+}
+.content100 section{
     width: 100%;
 }
 
 section article .postList {
+    width: 77%;
     margin: 10px;
     background-color: #f9f9f9;
     font-family: Arial, Helvetica, sans-serif;
     transition: scale, 80ms ease-in-out;
     padding: 10px;
+    margin:0 auto;
+}
+.display{
+    display:flex;
+}
+.dadosArtigos{
+    padding: 20px;
 }
 section article .postList:hover {
     scale: 1.02;
@@ -266,9 +281,11 @@ input[type='search']{
     font-size: 13px;
 }
 
-@keyframes zoomAnimate {
-    0%{background-size: 100%;}
-    100%{background-size: 105%;}
+@keyframes Animate {
+    0%{background-position-x: left}
+    50%{background-position-x: right}
+    100%{background-position-x: left}
+
 }
 
 article .data{

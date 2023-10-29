@@ -16,9 +16,7 @@
                 Reiciendis cupiditate fugiat amet hic.</p>
         </section>
     </main>
-    <footer>
-        <h2>Contatos</h2>
-    </footer>
+    <?php get_footer()?>
 </body>
 
 </html>

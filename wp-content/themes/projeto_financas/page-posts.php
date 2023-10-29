@@ -1,7 +1,3 @@
-<?php
-    $posts = get_posts();
-?>
-
 <?php get_header(); ?>
 
 <body>
@@ -13,12 +9,8 @@ require "models/artigos_model.php";
 use projeto_financas\Controller\Artigos;
 $artigos_controller = new Artigos;
 echo $artigos_controller->listarArtigos();
-
+get_footer();
 ?>
-<footer>
-    <h2>Contatos</h2>
-</footer>
-
 </body>
 
 </html>

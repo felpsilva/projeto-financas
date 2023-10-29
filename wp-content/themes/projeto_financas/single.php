@@ -8,5 +8,6 @@ use projeto_financas\Controller\Artigo;
 
 $artigo_controller = new Artigo;
 echo $artigo_controller->exibirPost();
+get_footer();
 
 ?>

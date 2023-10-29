@@ -4,17 +4,19 @@
           {% for artigo in artigos %}
               <a href="{{ artigo.link }}">
                   <article>
-                      <div class="postList">   
-                          <h2>
-                              {{ artigo.titulo }}
-                          </h2>
-                          <p> {{ artigo.resumo }}</p>
-                          <p class="data">{{ artigo.data('d/m/Y') }}</p>    
-
+                      <div class="postList display">
+                        <figure>
+                            {{ artigo.imgUrl | raw }}
+                        </figure>
+                        <div class="dadosArtigos">                          
+                            <h2>
+                                {{ artigo.titulo }}
+                            </h2>
+                            <p class="data">{{ artigo.data }}</p>    
+                        </div>
                       </div>
                   </article>
               </a>
           {% endfor %}
       </section>
-
   </main>
