@@ -1,19 +1,13 @@
     <main class="contentArtigo">
         <section  class="contentGeral">
             <article>
-                <h1>
-                    {{ titulo }}
-                </h1>
-                <p class="resumo">
-                {{ resumo|raw|nl2br }}
-                </p>
-                <p class="autor">Por: {{ autor }}
-                </p>
-                <p class="data">Data de publicação: {{ data|date("d/m/y H:i") }}
-                </p>    
+                <h1>{{ titulo }}</h1>
+                <p class="resumo">{{ resumo|raw|nl2br }}</p>
+                <p class="autor">Por: {{ autor }}</p>
+                <p class="data">Data de publicação: {{ data|date("d/m/y H:i") }}</p>    
                 <div class="imgPost">
-                    <img src="{{ imagem_url }}" alt="{{ imagem_title }}"></div>
-                <div class="ads-horizontal"></div>
+                    <img src="{{ imagem_url }}" alt="{{ imagem_title }}">
+                </div>
                 <p>{{ conteudo|raw|nl2br }}<p>
             </article>
         </section>

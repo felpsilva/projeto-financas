@@ -1,29 +1,25 @@
 <?php
 namespace projeto_financas\Controller;
 
-use projeto_financas\models\diarioModel;
+use projeto_financas\models\diario_model;
+use projeto_financas\Controller\Twig;
 
 class Diario
 {
-  public $twig;
-  public function __construct() {
-    $loader = new \Twig\Loader\FilesystemLoader('wp-content/themes/projeto_financas/views');
-    $this->twig = new \Twig\Environment($loader);
-}
-
   public function exibirDiario(){
+    $twigController = new Twig;
     global $post;
     $post_thumbnail_id = get_post_thumbnail_id();
 
     $post_id = get_the_ID();
-    $diarioModel = new diarioModel;
+    $diarioModel = new diario_model;
     $resumo_diario = $diarioModel->obterDiario($post_id);
     $imagemDestacadaUrl = $diarioModel->obterIdImagemDestacada($post_thumbnail_id);
     $imagemDestacadaTitle = $diarioModel->obterTituloImagemDestacada($post_thumbnail_id);
     $nomeAutor = $diarioModel->obterNomeDoAutor($post->post_author);
 
     
-    return $this->twig->render('diario.html', [
+    return $twigController->twig->render('diario.html', [
       'titulo'       => $resumo_diario->post_title,
       'resumo'       => $resumo_diario->post_excerpt, 
       'autor'        => $nomeAutor, 

@@ -3,7 +3,6 @@
 <body>
 <?php  include  "views/menu_superior.html"?>
     <main class="sobreFlex">
-    <?php include "views/ads/ads-vertical.html"?>
         <section class="content">
             <h1>QUEM SOMOS</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur maxime aut porro quos,

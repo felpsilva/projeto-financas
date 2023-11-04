@@ -1,38 +1,35 @@
 <?php
 
 namespace projeto_financas\Controller;
-use projeto_financas\models\HomeModel;
+use projeto_financas\models\Home_model;
 use projeto_financas\controller\Diarios;
+use projeto_financas\Controller\Twig;
 
 class Home extends Diarios
 {
   public $destaque;
-  public $twig;
   public $recentes;
 
-  public function __construct() {
-      $loader = new \Twig\Loader\FilesystemLoader('wp-content/themes/projeto_financas/views');
-      $this->twig = new \Twig\Environment($loader);
-  }
   public function exibeDestaque(){
+    $twigController = new Twig;
+
     $ultimoArtigo = array(
       'post_type'     => 'post',
       'posts_per_page' => 1,
       'offset'        => 0
   );
-    $this->destaque = new HomeModel;
+    $this->destaque = new Home_model;
     $this->destaque->getPosts($ultimoArtigo);
 
     $linkPost = $this->destaque->getLink($this->destaque->posts[0]);
     $urlImagemDestaque = $this->destaque->getImgDestaqueUrl($this->destaque);
     $tituloDestaque = $this->destaque->getTitulo();
-    $this->recentes = new HomeModel;
 
-    return $this->twig->render('home.html', [
+    return $twigController->twig->render('home.html', [
       'link_post'   => $linkPost,
       'url_imagem'  => $urlImagemDestaque,
       'titulo_post' => $tituloDestaque,
-      'artigos_mais_recentes' => $this->recentes->exibeRecentes()
+      'artigos_mais_recentes' => $this->destaque->exibeRecentes()
     ]);
   }
 

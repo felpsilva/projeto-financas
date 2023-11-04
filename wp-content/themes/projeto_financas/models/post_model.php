@@ -1,12 +1,10 @@
 <?php  
 namespace projeto_financas\models;
 
-class PostModel {
+class Post_model {
 
-  private $posts;
   public function obterPost($post_id){
-       return  get_post($post_id);
-      
+       return  get_post($post_id);  
   }
 
   public function obterIdImagemDestacada($post_thumbnail_id){

@@ -5,16 +5,12 @@
           <a href="{{ diario.link }}">
               <article>
                   <div class="postList">   
-                      <h2>
-                          {{ diario.titulo }}
-                      </h2>
-                      <p> {{ diario.resumo }}</p>
+                      <h2>{{ diario.titulo }}</h2>
+                      <p>{{ diario.resumo }}</p>
                       <p class="data">{{ diario.data }}</p>    
-
                   </div>
               </article>
           </a>
       {% endfor %}
   </section>
-
 </main>

@@ -1,4 +1,3 @@
-
 {% include 'menu_superior.html'%}
 <main class="content">
   <h1 class="center">InfoGrana te informa</h1>
@@ -19,7 +18,6 @@
               </a>
           </article>
           <div class="artigosRecentes">
-
             {% if artigos_mais_recentes %}
             {% for artigo_mais_recente in artigos_mais_recentes %}
           <a href='{{ artigo_mais_recente.post_url }}'>
@@ -31,10 +29,7 @@
           </article>
           </a>
           {% endfor %}
-          {% endif %}
-        
-          </div >
-        
+          {% endif %}       
+          </div >      
   </section>
-
 </main>

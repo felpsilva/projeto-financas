@@ -1,14 +1,12 @@
 <?php
 
 namespace projeto_financas\models;
-class HomeModel
+class Home_model
 {
   public $posts;
   public $linkPost;
   public $imgDestaque;
   public $titulo;
-  public $recentes;
-
   public function getPosts($ultimoArtigo){
     $this->posts = get_posts($ultimoArtigo);
     return $this->posts;
@@ -32,7 +30,7 @@ class HomeModel
   public function exibeRecentes(){
     $artigosRecentes = array(
       'post_type'     => 'post',
-      'posts_per_page' => 3,
+      'posts_per_page' => 4,
       'offset'        => 1
   );
   $artigosMaisRecentes = [];

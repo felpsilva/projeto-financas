@@ -1,7 +1,7 @@
 <?php
 namespace projeto_financas\models;
 
-class diarioModel
+class diario_model
 {
   public static function obterDiario($post_id){
     $diario = get_post($post_id);

@@ -3,15 +3,15 @@
 namespace projeto_financas\Controller;
 
 use projeto_financas\models\Artigos_model;
+use projeto_financas\Controller\Twig;
 
 class Artigos
 {
 
-  public function listarArtigos() {
-    $loader = new \Twig\Loader\FilesystemLoader('wp-content/themes/projeto_financas/views');
-    $twig = new \Twig\Environment($loader);
+  public function listarArtigos(){
+    $twigController = new Twig;
     $artigos = new Artigos_model;
-    echo $twig->render('artigos.html',['artigos' => $artigos->getPosts()]);
+    echo $twigController->twig->render('artigos.html',['artigos' => $artigos->getPosts()]);
 
   }
 

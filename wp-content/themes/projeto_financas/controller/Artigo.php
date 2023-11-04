@@ -2,31 +2,26 @@
 
 namespace projeto_financas\Controller;
 
-use projeto_financas\models\PostModel;
-
+use projeto_financas\models\Post_model;
+use projeto_financas\Controller\Twig;
 class Artigo {
-  public $twig;
-
-  public function __construct() {
-      $loader = new \Twig\Loader\FilesystemLoader('wp-content/themes/projeto_financas/views');
-      $this->twig = new \Twig\Environment($loader);
-  }
 
   public function exibirPost() {
       global $post;
+      $twigController = new Twig;
 
       if ($post) {
         $postId = $post->ID;
         $post_thumbnail_id = get_post_thumbnail_id();
 
-        $postModel = new PostModel();
+        $postModel = new Post_model();
 
         $post = $postModel->obterPost($postId);
         $imagemDestacadaUrl = $postModel->obterIdImagemDestacada($post_thumbnail_id);
         $imagemDestacadaTitle = $postModel->obterTituloImagemDestacada($post_thumbnail_id);
         $nomeAutor = $postModel->obterNomeDoAutor($post->post_author);
         
-        return $this->twig->render('single.html', [
+        return $twigController->twig->render('single.html', [
             'titulo' => $post->post_title,
             'resumo' => $post->post_excerpt, 
             'autor' => $nomeAutor, 

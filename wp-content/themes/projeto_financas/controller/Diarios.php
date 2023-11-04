@@ -3,17 +3,14 @@
 namespace projeto_financas\Controller;
 
 use projeto_financas\models\Diarios_model;
+use projeto_financas\Controller\Twig;
 
 class Diarios
 {
-
   public function listarDiarios(int $quantidade) {
-    $loader = new \Twig\Loader\FilesystemLoader('wp-content/themes/projeto_financas/views');
-    $twig = new \Twig\Environment($loader);
+    $twigController = new Twig;
     $diarios = new Diarios_model;
-    echo $twig->render('diarios.html',['diarios' => $diarios->getPosts($quantidade)]);
-
+    echo $twigController->twig->render('diarios.html',['diarios' => $diarios->getPosts($quantidade)]);
   }
-
 
 }

@@ -76,6 +76,10 @@ header div div {
     height: 50px;
     font-size: 35px;
 }
+header div div a{
+    text-decoration: none;
+    color: #fff;
+}
 
 header ul {
     list-style: none;
@@ -231,6 +235,7 @@ p{
     flex-direction: column;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    width: 70vw;
 }
 aside{
     display: inline-block;
