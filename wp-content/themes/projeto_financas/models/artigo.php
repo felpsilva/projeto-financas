@@ -4,7 +4,7 @@ namespace projeto_financas\models;
 class PostModel {
 
   private $posts;
-  public function obterPostPorId($post_id){
+  public function obterPost($post_id){
        return  get_post($post_id);
       
   }

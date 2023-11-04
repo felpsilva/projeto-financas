@@ -21,7 +21,7 @@ class Artigo {
 
         $postModel = new PostModel();
 
-        $post = $postModel->obterPostPorId($postId);
+        $post = $postModel->obterPost($postId);
         $imagemDestacadaUrl = $postModel->obterIdImagemDestacada($post_thumbnail_id);
         $imagemDestacadaTitle = $postModel->obterTituloImagemDestacada($post_thumbnail_id);
         $nomeAutor = $postModel->obterNomeDoAutor($post->post_author);

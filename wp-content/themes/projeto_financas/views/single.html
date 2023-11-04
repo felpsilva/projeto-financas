@@ -9,15 +9,12 @@
                 </p>
                 <p class="autor">Por: {{ autor }}
                 </p>
-                <p class="data">Data de publicação: {{ data|date("d/m/y H:i") }} <!--colocar filtros do twig-->
+                <p class="data">Data de publicação: {{ data|date("d/m/y H:i") }}
                 </p>    
                 <div class="imgPost">
                     <img src="{{ imagem_url }}" alt="{{ imagem_title }}"></div>
                 <div class="ads-horizontal"></div>
-                <!-- < ?php the_content() ?> -->
-                <p>{{ conteudo|raw|nl2br }}<p>  <!--colocar filtros do twig-->
+                <p>{{ conteudo|raw|nl2br }}<p>
             </article>
-            <!-- < ?php include "views/ads/ads-vertical.html"?> -->
         </section>
     </main>
-    <!-- < ?php endwhile; ?> -->

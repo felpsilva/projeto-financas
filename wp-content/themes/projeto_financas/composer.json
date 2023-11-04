@@ -6,7 +6,8 @@
     },
     "autoload": {
         "psr-4": {
-            "projeto_financas\\Controller\\": "controller"
+            "projeto_financas\\Controller\\": "controller",
+            "projeto_financas\\models\\": "models"
         }
     }
     

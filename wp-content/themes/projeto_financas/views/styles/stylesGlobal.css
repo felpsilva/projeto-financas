@@ -207,7 +207,7 @@ section a{
         background-repeat: no-repeat;
         overflow: hidden;
         position: relative;
-        animation: Animate 50s infinite;
+        animation: Animate 50s infinite linear;
         background-position: center;
 }
 .imgPost{
