@@ -1,0 +1,35 @@
+{% include 'menu_superior.html'%}
+<main class="content">
+  <h1 class="center">InfoGrana te informa</h1>
+  <h2>Seção de destaque</h2>
+  <section class="secaoDestaque">
+          <article>
+              <a href='{{ link_post }}'>
+                  <div class="containDestaque">
+                      <div class='img'>
+                          <figure class="destaqueHome"style="background-image: url('{{ url_imagem }}')">
+                              <div class='informacaoArtigo'>
+                                  <h3>{{ titulo_post }}</h3>
+                              </div>
+                              <div class="destaqueSombra"></div>
+                          </figure>
+                      </div>
+                  </div>
+              </a>
+          </article>
+          <div class="artigosRecentes">
+            {% if artigos_mais_recentes %}
+            {% for artigo_mais_recente in artigos_mais_recentes %}
+          <a href='{{ artigo_mais_recente.post_url }}'>
+          <article class='container'>
+          <div class='img2'></div>
+              <h3>{{ artigo_mais_recente.titulo_post }}</h3>
+              <p>{{ artigo_mais_recente.resumo }}</p>
+              <p class="data">{{ artigo_mais_recente.data('d/m/Y') }}</p>    
+          </article>
+          </a>
+          {% endfor %}
+          {% endif %}       
+          </div >      
+  </section>
+</main>
